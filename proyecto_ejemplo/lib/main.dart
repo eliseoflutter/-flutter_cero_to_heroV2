@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_ejemplo/widgets/column.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,7 +17,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: ColumnaEjemplo(),
+        child: Container(),
       ),
     );
   }
