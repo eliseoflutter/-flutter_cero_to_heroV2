@@ -13,9 +13,9 @@ class ColumnaEjemplo extends StatelessWidget {
       // crossAxisAligment => nos permite ordenar los hijos de manera horizontal
       crossAxisAlignment: CrossAxisAlignment.end,
       // mainAxisSize => ordenamos que la columna ocupe un espacio minimo basado en el espacio total de sus hijos
-      mainAxisSize: MainAxisSize.max,
+      mainAxisSize: MainAxisSize.min,
       // verticalDirection => controlamos la direccion en la cual se renderiza la columna (al reves, al derecho)
-      verticalDirection: VerticalDirection.up,
+      // verticalDirection: VerticalDirection.up,
       children: [
         Container(
           color: Colors.red,
