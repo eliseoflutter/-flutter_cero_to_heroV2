@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
 class ColumnaEjemplo extends StatelessWidget {
-  const ColumnaEjemplo({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
 class FilaEjemplo extends StatelessWidget {
-  const FilaEjemplo({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Row(
