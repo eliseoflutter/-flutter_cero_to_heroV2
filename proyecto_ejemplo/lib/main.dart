@@ -20,35 +20,21 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return AppBarWidget();
-  }
-}
-
-class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        centerTitle: true,
-        backgroundColor: Colors.black,
-        leading: IconButton(
-          icon: Icon(Icons.camera_alt),
-          onPressed: () {},
+      drawer: Drawer(
+        child: Container(
+          color: Colors.white,
+          child: SafeArea(
+            child: Column(
+              children: [],
+            ),
+          ),
         ),
-        title: Text('Nombre de App'),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: Icon(Icons.more_horiz),
-            onPressed: () {},
-          ),
-        ],
+      ),
+      drawerEnableOpenDragGesture: false,
+      drawerScrimColor: Colors.black.withOpacity(.8),
+      appBar: AppBar(
+        title: Text('Menus'),
       ),
     );
   }
